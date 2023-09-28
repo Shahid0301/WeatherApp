@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;700&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body >
+        <!-- NavBar -->
+        <section class="nav-section">
+            <nav>
+                
+                <form class="form-inline">
+                    <!-- <a class="navbar-brand">Weather</a> -->
+                  <input class=" search" type="search" placeholder="Search City" id="Search">
+                  <button class="btn " type="submit">Search</button>
+                </form>
+            </nav>
+        </section>
+          <!-- Js -->
+          <section class="main-section">
+            <section>
+                <div class="content-div current-day">
+                    <div>
+                        <h2 class="city"></h2>
+                        <h4 class="state"></h4>
+                        <h2 class="curr-temp"></h2>
+                    </div>
+                    <div class="icon-img currState">
+                        <img src="" alt="icon" class="current-day-img">
+                        <h4 class="curr-state"></h4>
+
+                    </div>
+                  
+                </div>
+                <div class="div-text">Today's Forecast</div>
+                <div class="content-div today-forecast">
+                    <div class="t curr-forecast" value="6">
+                        <h6 class="time">6:00AM</h6>
+                        <img src="" alt="" class="curr-forecast-icon1">
+                        <h5 class="temp1"></h5>
+                    </div>
+                    <div class="t curr-forecast" value="9">
+                        <h6 class="time">9:00AM</h6>
+                        <img src="" alt="" class="curr-forecast-icon2">
+                        <h5 class="temp2"></h5>
+                    </div>
+                    <div class="t curr-forecast" value="12">
+                        <h6 class="time">12:00PM</h6>
+                        <img src="" alt="" class="curr-forecast-icon3">
+                        <h5 class="temp3"></h5>
+                    </div>
+                    <div class="t curr-forecast" value="15">
+                        <h6 class="time">3:00PM</h6>
+                        <img src="" alt="" class="curr-forecast-icon4">
+                        <h5 class="temp4"></h5>
+                    </div>
+                    <div class="t curr-forecast" value="18">
+                        <h6 class="time">6:00PM</h6>
+                        <img src="" alt="" class="curr-forecast-icon5">
+                        <h5 class="temp5"></h5>
+                    </div>
+                    <div class="t curr-forecast" value="21">
+                        <h6 class="time">9:00PM</h6>
+                        <img src="" alt="" class="curr-forecast-icon6">
+                        <h5 class="temp6"></h5>
+                    </div>
+                </div>
+                    <div>Air Condition</div>
+                <div class="content-div air-condition">
+                    
+                    <div class="air-condition-content feel">
+                        Real Feel
+                    </div>
+                    <div class="air-condition-content wind">
+                        <h4>Wind</h4>   
+                    </div>
+                    <div class="air-condition-content rain">
+                        <h4>Chance of rain</h4>
+                    </div>
+                    <div class="air-condition-content uv">
+                        <h4>UV index</h4>
+                    </div>
+    
+                </div>
+            </section>
+            <section>
+                <div class="sevenDay" value="0">
+                    <div class="day0"></div>
+                    <div class="weather0"></div>
+                    <div class="temp0"></div>
+                </div>
+            <div class="sevenDay" value="1">
+                <div class="day1"></div>
+                <div class="weather1"></div>
+                <div class="temp1"></div>
+            </div>
+            <div class="sevenDay" value="2">
+                <div class="day2"></div>
+                <div class="weather2"></div>
+                <div class="temp2"></div>
+            </div>
+            <div class="sevenDay" value="3">
+                <div class="day3"></div>
+                <div class="weather3"></div>
+                <div class="temp3"></div>
+            </div>
+            <div class="sevenDay" value="4">
+                <div class="day4"></div>
+                <div class="weather4"></div>
+                <div class="temp4"></div>
+            </div>
+            <div class="sevenDay" value="5">
+                <div class="day5"></div>
+                <div class="weather5"></div>
+                <div class="temp5"></div>
+            </div>
+            <div class="sevenDay" value="6">
+                <div class="day6"></div>
+                <div class="weather6"></div>
+                <div class="temp6"></div>
+            </div>
+         
+            </section>
+
+            
+
+          </section>
+          <footer>
+            <div class="container">
+              <p>&copy; 2023 weatherApp | Designed by Shahid Khan</p>
+            </div>
+          </footer>
+          <script src="./script.js"></script>
+          
+<!-- <tps://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+</body>
+</html>

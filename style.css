@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:Comic Neue; */
+    /* color: #5C5470; */
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Comic Neue', cursive;
+font-family: 'Poppins', sans-serif;
+    
+}
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    
+    
+  }
+  .form-inline{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-right:95px ;
+    
+  }
+
+  
+  .search {
+    width: 22vw; 
+    padding:10px;
+    border-radius: 10px;
+  }
+  
+  /* Optional: Style the button */
+  .btn {
+    margin-left: 10px;
+    background-color: #CEDEBD;
+    color: #000000;
+  }
+  
+
+.main-section{
+    
+    
+    margin:30px 60px;
+    display: flex;
+   
+    flex-wrap: wrap;
+}
+.main-section section{
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.main-section section:nth-child(1){
+    /* margin: 10px; */
+    margin-bottom: 10px;
+    margin-right: 20px;
+    width: 65%;
+   
+    background-color: white;
+   
+}
+.main-section section:nth-child(1) .content-div:nth-child(1)
+{
+    background-color: #0000;
+    color: black;
+    padding: 8px;
+}.main-section section:nth-child(1) .content-div{
+    justify-content:space-evenly;
+    
+    margin: 10px 0px;
+    border-radius: 10px;
+    background-color: #CEDEBD;
+}
+.main-section section:nth-child(2){
+    
+    /* margin-left: 9px; */
+    width: 28vw;
+    position: relative;
+    bottom: 23px;
+    background-color:#CEDEBD;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: 600;
+}
+.main-section section:nth-child(2) .sevenDay{
+    border-bottom: 5px white solid;
+    
+}
+.main-section section:nth-child(2) .sevenDay:last-child{
+    border-bottom: none;
+}
+.main-section section:nth-child(2) div{
+    height: 15%;
+    /* border: 2px black solid ; */
+    justify-content:center;
+    align-items: center;
+    display: flex;
+}
+.main-section section:nth-child(2) div>div:first-child{
+    width: 5vw;
+}
+.main-section section:nth-child(2) div>div{
+    /* flex-direction: row; */
+    padding:0; 
+    width: 11vw;
+    /* height: 80%; */
+   
+}
+
+
+/* current div */
+.main-section section:first-child .current-day{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.main-section section:first-child .current-day div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-section section:first-child .current-day div:nth-child(2){
+    flex-direction: row;
+
+}
+.main-section section:first-child .current-day div:nth-child(2) img{
+    width: 30%;
+ 
+   
+}
+/* Current day forecast */
+.main-section section:first-child .today-forecast{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.main-section section:first-child .today-forecast .curr-forecast{
+
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+   
+
+
+}
+/* air condition */
+.main-section section:first-child .air-condition{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  
+}
+.main-section section:first-child .air-condition .air-condition-content{
+    margin: 50px;
+    width: 8%;
+    
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Optional: Style the link */
+  footer p a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+@media screen and (max-width:1023px)  {
+    .search{
+        width: 65vw;
+        padding: 5px 10px;
+    }
+    .form-inline{
+        margin-right: 69px;
+    }
+    .main-section{
+    
+        margin:30px 60px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-section section:nth-child(1){
+       width:100%;
+        
+    }
+    .main-section section:nth-child(2){
+        width:100%;
+        flex-direction:column;
+        bottom: 0;
+        margin-left: -15px;
+        margin-bottom: 20px;
+        
+    }
+
+    .main-section section:first-child .air-condition .air-condition-content{
+        margin: 50px;
+        width: 30%;
+        
+    }
+    .main-section section:nth-child(2) div>div:nth-child(1){
+        width: 30vw;
+    }
+    .main-section section:nth-child(2) div>div{
+      width: 30vw;
+     
+    }
+
+}
+@media screen and (max-width:620px){
+    .search{
+        width: 70%;
+        padding: 5px 10px;
+    }
+
+    .main-section{
+        margin:10px
+    }
+    .nav-section{
+        padding: 0;
+    }
+    .form-inline{
+        margin-right: 50px;
+    }
+    .main-section section:first-child .current-day{
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+    .main-section section:first-child .current-day div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main-section section:nth-child(2){
+        flex-direction:column;
+        bottom: 0;
+        margin-left: -23px;
+        
+    }
+    .main-section section:first-child .today-forecast {
+        width:100%;
+        flex-wrap: wrap;
+        
+    }
+    .main-section section:first-child .today-forecast .curr-forecast{
+        width:30%;
+        
+        
+       
+        
+    }
+
+    .main-section section:first-child .air-condition .air-condition-content{
+        margin: 50px;
+        width: 13%;
+    }
+    .main-section section:nth-child(2) .sevenDay{
+        
+        flex-direction: column;
+        margin: 10px 0;
+        border-bottom: 1px solid white;
+        
+    }
+
+    .main-section section:nth-child(2) .sevenDay div{
+        flex-direction: column;
+        width: auto;
+    }
+}
+
