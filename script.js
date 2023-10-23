@@ -3,7 +3,7 @@ const weather={
     
     async apiData(location) {
         const apiKey = 'eb5ff27666a746a2b14140032231909';
-        const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=7`;
+        const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=3`;
     
         try {
           const data = await fetch(url);
@@ -69,7 +69,7 @@ async function currentDayForecast(){
 }
 currentDayForecast();
 async function sevenDay(){
-    const days=['Sun','Mon','Tue','Wed','Thur','Fri','Sat'];
+    const days=['Sunday','Monday','Tuesday','Wednesday','Thurday','Friday','Saturday'];
     let i=0;
     weather.apiData(userlocation).then(weatherData=>{
         
@@ -113,15 +113,5 @@ async function aircond(){
 }
 aircond();
 //hide
-// console.log(document.querySelector(".currState"));
-// setInterval(()=>{
-  
-//     document.querySelector(".currState").classList.add('hide');
 
-//     setTimeout(()=>{
-//         document.querySelector(".currState").classList.remove('hide');
-//     },600)
-    
-
-// },1000);
 
