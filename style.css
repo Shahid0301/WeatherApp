@@ -93,16 +93,19 @@ nav {
 .main-section section:nth-child(2) .sevenDay{
     border-bottom: 5px white solid;
     
-}
+}   
 .main-section section:nth-child(2) .sevenDay:last-child{
     border-bottom: none;
 }
 .main-section section:nth-child(2) div{
-    height: 15%;
+    height: 100%;
+    /* width: 100%; */
     /* border: 2px black solid ; */
+    flex-direction: column;
     justify-content:center;
     align-items: center;
     display: flex;
+    
 }
 .main-section section:nth-child(2) div>div:first-child{
     width: 5vw;
@@ -110,7 +113,7 @@ nav {
 .main-section section:nth-child(2) div>div{
     /* flex-direction: row; */
     padding:0; 
-    width: 11vw;
+    /* width: 11vw; */
     /* height: 80%; */
    
 }
